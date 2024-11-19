@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+html,
+body,
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  padding: 12px;
+  max-width: 435px;
+  width: 100%;
+  border: 1px solid black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.game-logo {
+  display: flex;
+  width: 30px;
+  height: 30px;
+}
+
+.game-table-body__heading {
+  padding: 0 22px;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.game-table-body__heading span {
+  font-weight: 800;
+  font-size: 29.56px;
+  line-height: 35.77px;
+  color: #ffff;
+}
+
+.game-table__game {
+  width: 100%;
+}
+
+.game-table__game img {
+  width: 59.11px;
+  height: 39.25px;
+}
+
+.game-team__allies {
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.game-team__allies > :last-child {
+  grid-column: span 1;
+  justify-self: end;
+}
+
+.game-team__allies img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.3px solid #1b7300;
+}
+
+.game-team__enemies img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.3px solid #740000;
+}
+
+.game-team__allies button {
+  right: 0;
+  font-size: 5.88px;
+  line-height: 8.01px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #740000;
+  color: white;
+  background-color: #000;
+}
+
+.game-team__enemies button {
+  font-size: 5.88px;
+  line-height: 8.01px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  color: white;
+  border: none;
+  background-color: #000;
+}
+
+.game-team__enemies {
+  padding: 12px 0;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.game-team__enemies > :last-child {
+  grid-column: span 1;
+  justify-self: end;
+}
+
+.game-team {
+  padding: 0 65px;
+}
+
+.game-team span {
+  text-align: center;
+  color: #ffff;
+  font-size: 12.37px;
+  font-weight: 500;
+  line-height: 16.88px;
+}
+
+.game-team-peak__btn {
+  width: 74px;
+  height: 74px;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  margin-top: 12px;
+  border-radius: 2px;
+  font-size: 11.84px;
+}
+
+.game-footer {
+  padding: 12px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* swiper */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.game-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.game-table-body__heading {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.game-table__body {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  height: 400px;
+  position: relative;
+  padding: 20px;
+  background-color: transparent;
+  display: grid;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.game-table__game span {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+}
+
+/* General Layout */
+.game-table__body {
+  padding: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.mySwiper {
+  width: 100%;
+}
+
+.game-table__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.game-table__game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.game-table__game img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.game-table__game span {
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Swiper Navigation */
+.swiper-pagination {
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 0.5;
+}
+
+.game-table__body {
+  display: grid;
+  place-items: center;
+  height: auto;
+}
+
+.mySwiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-table__game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.game-table__game img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.game-table__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-items: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  bottom: 10px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px; 
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 0 6px; 
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #ff0000;
+}
+
+.game-table__game span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 8px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+}
+.game-table__game-name{
+  background-color: #201b1b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 16px;
+
+}
